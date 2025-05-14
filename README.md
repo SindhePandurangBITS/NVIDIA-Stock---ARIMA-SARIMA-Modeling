@@ -47,45 +47,48 @@ This repository includes a Jupyter Notebook and supporting scripts to:
 ```bash
 git clone https://github.com/your_username/time-series-arima-sarima.git
 cd time-series-arima-sarima
-
+```
 ###  Step 2: Install dependencies
 
 Make sure you have Python 3.8+ and pip installed. Then run:
 
 ```bash
 pip install -r requirements.txt
+```
+### 📓 Step 3: Run the notebook
+```bash
+Use Jupyter Notebook to open the main notebook:
+```
+### Step 4: Or run Python scripts
+```bash
+python scripts/preprocessing.py
+python scripts/modeling.py
+```
+### Step 5: View results
+- Figures will be saved in: results/figures/
+- Reports, logs, and notes: reports/
 
-📁 Step 5: View results
-📊 Figures will be saved in: results/figures/
-
-📝 Reports, logs, and notes: reports/
-
-📖 Notes
+### 📖 Notes
 The notebook contains markdown cells that explain:
+- What each modeling step is doing
+- How the diagnostics work
+- How metrics were chosen
 
-What each modeling step is doing
 
-How the diagnostics work
-
-How metrics were chosen
-
-This can serve as a good learning reference for others, too.
-
-🙋‍♀️ Questions or Suggestions?
+## 🙋‍♀️ Questions or Suggestions?
 Open an issue or create a discussion.
 
-⭐ Support
+## ⭐ Support
 If you find this project helpful:
-
 Give it a ⭐ star on GitHub
 
 Share with others interested in time series forecasting!
 
-🧠 Credits
-pmdarima for auto_arima
+## 📑 Key References
+1. Box, G. E. P., & Jenkins, G. M. (1976). _Time Series Analysis: Forecasting and Control_. Holden-Day.  
+   > The foundational work that formalized the ARIMA modeling framework, including identification, estimation, and diagnostic checking.
+   
+2. Akaike, H. (1974). A new look at the statistical model identification. _IEEE Transactions on Automatic Control, 19_(6), 716–723.  
+   https://doi.org/10.1109/TAC.1974.1100705  
+   > Introduced the Akaike Information Criterion (AIC), now widely used for selecting the optimal ARIMA/SARIMA model order.
 
-statsmodels for SARIMAX implementation
-
-Yahoo Finance via yfinance for stock data
-
-All visualizations created using matplotlib and seaborn
