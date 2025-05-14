@@ -1,24 +1,53 @@
-## Time Series Modeling with ARIMA & SARIMA (NVIDIA)  
+# 📈 Time Series Modeling with ARIMA & SARIMA (NVIDIA)
 
-## 🏆 Motivation
-- I’ve spent considerable time studying global technological history, economics, and geopolitics. The ongoing silicon (semiconductor) revolution driven by companies like NVIDIA, TSMC, and ASML is something my peers and I anticipated nearly a decade ago. This project aims to quantitatively explore that shift by building an end to end ARIMA/SARIMA model to forecast NVIDIA's stock prices.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+[![Stars](https://img.shields.io/github/stars/your_username/time-series-arima-sarima.svg)](https://github.com/your_username/time-series-arima-sarima/stargazers)
 
-## 🧩 WHY only ARIMA/SARIMA for this TIME series, why not LSTM, GRU, Prophet?
-- For this project, ARIMA and SARIMA were chosen due to their effectiveness on smaller, univariate datasets like stock closing prices. They offer strong interpretability, are easy to implement, and require fewer computational resources compared to deep learning models like LSTM or GRU. While models like Prophet or LSTM work well in specific contexts, ARIMA/SARIMA provide a reliable and efficient baseline for time series forecasting, especially when seasonality and trend components are present.
+---
 
-   
+## 🎯 Motivation
 
-## 🎯 Project Goals
-- Forecast **NVIDIA (NVDA)** stock closing prices using ARIMA and SARIMA models.
-- Compare multi models performance and select the best fit.
-- Demonstrate an end-to-end time series analysis workflow:
-  - Data retrieval (yahoo finance)
-  - Exploratory Data Analysis (EDA)
-  - STL - Decomposition & Stationairty tests (ADF)
-  - Modeling (ARIMA, SARIMA for Multi p,d,q Parameters)
-  - Evaluation ( Ljung box test, AIC, BIC values, RAMSE )
-  - Final Prediction of NVIDIA Stock
+The semiconductor revolution—spearheaded by NVIDIA, TSMC and ASML is reshaping technology, economies and geopolitics at unprecedented speed. Accurately forecasting NVIDIA’s stock not only offers actionable investment insights but also demonstrates how classical time-series methods can deliver robust, interpretable predictions in a high-stakes, fast-evolving market. This project builds a fully reproducible ARIMA/SARIMA pipeline—covering data retrieval, rigorous diagnostics, and performance comparison—to quantify and anticipate market trends with precision.
 
+
+---
+
+## 🧩 Why ARIMA/SARIMA?
+
+- **Interpretability**: Coefficients directly reflect autoregressive and moving-average components.  
+- **Efficiency**: Minimal compute needed for univariate series, unlike deep-learning models.  
+- **Seasonality & Trend**: SARIMA captures both seasonal cycles and long-term trends in one framework.  
+- **Baseline Reliability**: Provides a robust benchmark before exploring advanced methods (e.g., LSTM, Prophet).
+
+---
+
+## 🚀 Project Goals
+
+- Forecast **NVIDIA (NVDA)** stock closing prices using ARIMA & SARIMA.  
+- Compare model performance via **RMSE**, **MAE**, **MAPE**, **AIC**, **BIC**, and **Ljung–Box**.  
+- Illustrate a complete workflow:
+  1. Data retrieval (Yahoo Finance)  
+  2. Exploratory Data Analysis & STL decomposition  
+  3. Stationarity tests & differencing (ADF)  
+  4. Parameter selection (ACF/PACF, `auto_arima`)  
+  5. Model fitting & forecasting  
+  6. Residual diagnostics & model selection  
+
+---
+
+## 📦 Requirements
+
+```text
+numpy==1.24.4
+pandas
+yfinance
+pmdarima==1.8.5
+statsmodels
+matplotlib
+seaborn
+scikit-learn
+```
 ---
 
 ![End to End Flow](End_to_End_Flow.png)
@@ -78,27 +107,11 @@ The notebook and pdf contains markdown cells that explain:
 - How the diagnostics work
 - How metrics were chosen and how i have evalued them.
 
-### requirements.txt
-
-```text
-numpy==1.24.4
-pmdarima==1.8.5
-yfinance
-pandas
-matplotlib
-seaborn
-statsmodels
-scikit-learn
-```
-
-## 🙋‍♀️ Questions or Suggestions?
-Open an issue or create a discussion.
 
 ## ⭐ Support
 If you find this project helpful:
 Give it a ⭐ star on GitHub
 
-Share with others interested in time series forecasting!
 
 ---
 
