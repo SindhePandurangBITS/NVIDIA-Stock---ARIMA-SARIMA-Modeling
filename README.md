@@ -12,7 +12,7 @@
 
 ---
 
-![End to End Flow](results/figures/End to End Flow.png)
+![End to End Flow](End_to_End_Flow.png)
 
 
 ## 📚 Overview
