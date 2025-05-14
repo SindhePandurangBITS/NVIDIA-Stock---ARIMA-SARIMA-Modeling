@@ -8,14 +8,14 @@
 
 ## 🎯 Motivation
 
-The semiconductor revolution—spearheaded by NVIDIA, TSMC and ASML is reshaping technology, economies and geopolitics at unprecedented speed. Accurately forecasting NVIDIA’s stock not only offers actionable investment insights but also demonstrates how classical time-series methods can deliver robust, interpretable predictions in a high-stakes, fast-evolving market. This project builds a fully reproducible ARIMA/SARIMA pipeline—covering data retrieval, rigorous diagnostics, and performance comparison—to quantify and anticipate market trends with precision.
+The semiconductor revolution spearheaded by NVIDIA, TSMC and ASML is reshaping technology, economies and geopolitics at unprecedented speed. Accurately forecasting NVIDIA’s stock not only offers actionable investment insights but also demonstrates how classical time-series methods can deliver robust, interpretable predictions in a high stakes, fast evolving market. This project builds a fully reproducible ARIMA/SARIMA pipeline covering data retrieval, rigorous diagnostics, and performance comparison to quantify and anticipate market trends with precision.
 
 
 ---
 
 ## 🧩 Why ARIMA/SARIMA?
 
-- **Interpretability**: Coefficients directly reflect autoregressive and moving-average components.  
+- **Interpretability**: Coefficients directly reflect autoregressive and moving average components.  
 - **Efficiency**: Minimal compute needed for univariate series, unlike deep-learning models.  
 - **Seasonality & Trend**: SARIMA captures both seasonal cycles and long-term trends in one framework.  
 - **Baseline Reliability**: Provides a robust benchmark before exploring advanced methods (e.g., LSTM, Prophet).
