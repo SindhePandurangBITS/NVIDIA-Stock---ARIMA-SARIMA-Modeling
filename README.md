@@ -1,4 +1,4 @@
-#Time Series Modeling with ARIMA & SARIMA  📈 
+## Time Series Modeling with ARIMA & SARIMA (NVIDIA) 📈 
 
 ## 🎯 Project Goals
 - 📊 Forecast **NVIDIA (NVDA)** stock closing prices using ARIMA and SARIMA models.
@@ -11,6 +11,9 @@
   - Evaluation
 
 ---
+
+![End to End Flow](End to End Flow.png)
+
 
 ## 📚 Overview
 
