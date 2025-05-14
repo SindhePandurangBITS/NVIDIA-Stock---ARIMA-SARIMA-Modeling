@@ -1,4 +1,4 @@
-# 📈 Time Series Modeling with ARIMA & SARIMA
+#Time Series Modeling with ARIMA & SARIMA  📈 
 
 ## 🎯 Project Goals
 - 📊 Forecast **NVIDIA (NVDA)** stock closing prices using ARIMA and SARIMA models.
@@ -35,3 +35,39 @@ This repository includes a Jupyter Notebook and supporting scripts to:
 ```bash
 git clone https://github.com/your_username/time-series-arima-sarima.git
 cd time-series-arima-sarima
+
+
+📁 Step 5: View results
+📊 Figures will be saved in: results/figures/
+
+📝 Reports, logs, and notes: reports/
+
+📖 Notes
+The notebook contains markdown cells that explain:
+
+What each modeling step is doing
+
+How the diagnostics work
+
+How metrics were chosen
+
+This can serve as a good learning reference for others, too.
+
+🙋‍♀️ Questions or Suggestions?
+Open an issue or create a discussion.
+
+⭐ Support
+If you find this project helpful:
+
+Give it a ⭐ star on GitHub
+
+Share with others interested in time series forecasting!
+
+🧠 Credits
+pmdarima for auto_arima
+
+statsmodels for SARIMAX implementation
+
+Yahoo Finance via yfinance for stock data
+
+All visualizations created using matplotlib and seaborn
